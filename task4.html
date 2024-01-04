@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+      }
+
+      #slides article {
+        float:left;
+        width: 20%;
+        box-sizing: border-box;
+      }
+
+      #slides .image {
+        width: 500%;
+      }
+
+      #overflow {
+        width: 100%;
+        overflow:hidden;
+      }
+
+      #slider {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      #switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+  margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image {
+  margin-left: -400%;
+}
+
+      img {
+        width: 100%;
+      }
+    </style>
+    <title>Завдання 4</title>
+  </head>
+  <body>
+    			<article id="slider">
+				<input
+					checked
+					type="radio"
+					name="slider"
+					id="switch1" />
+				<input
+					type="radio"
+					name="slider"
+					id="switch2" />
+				<input
+					type="radio"
+					name="slider"
+					id="switch3" />
+				<input
+					type="radio"
+					name="slider"
+					id="switch4" />
+				<input
+					type="radio"
+					name="slider"
+					id="switch5" />
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article>
+								<img
+									src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
+							</article>
+							<article>
+								<img
+									src="https://wallpapers.com/images/featured/beautiful-amazing-pictures-ce8zns6vqeh8q3gh.jpg" />
+							</article>
+							<article>
+								<img
+									src="https://static.vecteezy.com/system/resources/previews/009/273/280/non_2x/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg" />
+							</article>
+							<article>
+								<img
+									src="https://i.guim.co.uk/img/media/63de40b99577af9b867a9c57555a432632ba760b/0_266_5616_3370/master/5616.jpg?width=1200&quality=85&auto=format&fit=max&s=59ecca4b78e0bcb76a1f47dd3ab9ead7" />
+							</article>
+							<article>
+								<img
+									src="https://wallpapers.com/images/featured/flower-pictures-unpxbv1q9kxyqr1d.jpg" />
+							</article>
+						</div>
+					</div>
+				</div>
+  </body>
+</html>
